@@ -1,9 +1,9 @@
 function grow(x){
-    var sum = 0;
+    var sum = 1; // Set to 1, otherwise you you'll always get zero
     for (var i = 0; i < x.length; i++){
-
+        sum = sum * x[i];
     }
-    return x.length;
+    return sum;
 }
 
 console.log(grow([1, 2, 3])); // 6
